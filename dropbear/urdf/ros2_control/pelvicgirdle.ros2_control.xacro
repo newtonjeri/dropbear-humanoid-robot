@@ -15,7 +15,7 @@
     <xacro:joint prefix="${prefix}" name="left_leg_roll" min_value="-${PI}" max_value="-${PI}">
     </xacro:joint>
 
-    <xacro:joint prefix="${prefix}" name="Revolute31" min_value="-${PI}" max_value="-${PI}">
+    <!-- <xacro:joint prefix="${prefix}" name="Revolute31" min_value="-${PI}" max_value="-${PI}">
     </xacro:joint>
 
     <xacro:joint prefix="${prefix}" name="Revolute32" min_value="-${PI}" max_value="-${PI}">
@@ -25,7 +25,7 @@
     </xacro:joint>
 
     <xacro:joint prefix="${prefix}" name="Revolute34" min_value="-${PI}" max_value="-${PI}">
-    </xacro:joint>
+    </xacro:joint> -->
 
 </xacro:macro>
 

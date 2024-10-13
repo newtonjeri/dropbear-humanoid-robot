@@ -1835,7 +1835,7 @@
   </joint>
 </gazebo>
 
-<joint name="${prefix}_Revolute55" type="revolute">
+<joint name="${prefix}_wrist_roll" type="revolute">
   <origin xyz="-0.012993 -0.036995 ${sign*-0.039944}" rpy="0 0 0"/>
   <parent link="${prefix}_RMD-X8-Pro_MIR8_MIR1__4__1"/>
   <child link="${prefix}_shoulder-ex-al-interface_1"/>
