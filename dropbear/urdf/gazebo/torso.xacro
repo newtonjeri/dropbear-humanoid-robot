@@ -26,7 +26,7 @@
             <inertial>
                 <origin xyz="-0.10115135283353449 -0.0013901114700798356 -7.263530473061719e-07" rpy="0 0 0"/>
                 <mass value="0.1475731443240637"/>
-                <inertia ixx="0.000669" iyy="0.001202" izz="0.000582" ixy="3e-05" iyz="0.0" ixz="-0.0"/>
+                <inertia ixx="0.000669" iyy="0.001202" izz="0.000582" ixy="3e-05" iyz="0.0" ixz="0.0"/>
             </inertial>
             <visual>
                 <origin xyz="-0.098178 -0.07727 -0.06972" rpy="0 0 0"/>
@@ -47,7 +47,7 @@
             <inertial>
                 <origin xyz="-0.00311101079472062 -0.15030056139629244 3.941548639557757e-07" rpy="0 0 0"/>
                 <mass value="0.15869315430095274"/>
-                <inertia ixx="0.001188" iyy="2.2e-05" izz="0.001197" ixy="-0.000103" iyz="-0.0" ixz="-0.0"/>
+                <inertia ixx="0.001188" iyy="2.2e-05" izz="0.001197" ixy="-0.000103" iyz="0.0" ixz="0.0"/>
             </inertial>
             <visual>
                 <origin xyz="-0.132584 -0.102438 -0.06972" rpy="0 0 0"/>
@@ -68,7 +68,7 @@
             <inertial>
                 <origin xyz="0.0021730321883888515 0.004452995163235898 0.003000367089217068" rpy="0 0 0"/>
                 <mass value="0.02600357786447301"/>
-                <inertia ixx="1.5e-05" iyy="1e-05" izz="5e-06" ixy="1e-06" iyz="-0.0" ixz="0.0"/>
+                <inertia ixx="1.5e-05" iyy="1e-05" izz="5e-06" ixy="1e-06" iyz="0.0" ixz="0.0"/>
             </inertial>
             <visual>
                 <origin xyz="-0.152508 -0.100695 -0.06672" rpy="0 0 0"/>
@@ -131,7 +131,7 @@
             <inertial>
                 <origin xyz="-0.0032900520005997302 -0.021158555291507987 -3.4574544297422127e-06" rpy="0 0 0"/>
                 <mass value="0.030697548707811693"/>
-                <inertia ixx="2.3e-05" iyy="2.1e-05" izz="3e-06" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+                <inertia ixx="2.3e-05" iyy="2.1e-05" izz="3e-06" ixy="0.0" iyz="0.0" ixz="0.0"/>
             </inertial>
             <visual>
                 <origin xyz="-0.153878 -0.070461 -0.06972" rpy="0 0 0"/>
@@ -152,7 +152,7 @@
             <inertial>
                 <origin xyz="0.03354545375292603 -0.02394250921487151 0.1422001419923028" rpy="0 0 0"/>
                 <mass value="0.20320755210414637"/>
-                <inertia ixx="0.000816" iyy="0.000831" izz="5.5e-05" ixy="-5e-06" iyz="0.0" ixz="-0.0"/>
+                <inertia ixx="0.000816" iyy="0.000831" izz="5.5e-05" ixy="-5e-06" iyz="0.0" ixz="0.0"/>
             </inertial>
             <visual>
                 <origin xyz="-0.123358 -0.175587 0.072402" rpy="0 0 0"/>
@@ -215,7 +215,7 @@
             <inertial>
                 <origin xyz="-0.0018677266631636213 -0.02751025820058717 2.3432299522951894e-07" rpy="0 0 0"/>
                 <mass value="0.024142798048081008"/>
-                <inertia ixx="1.7e-05" iyy="1.4e-05" izz="3e-06" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+                <inertia ixx="1.7e-05" iyy="1.4e-05" izz="3e-06" ixy="0.0" iyz="0.0" ixz="0.0"/>
             </inertial>
             <visual>
                 <origin xyz="-0.150392 -0.030613 -0.06972" rpy="0 0 0"/>
@@ -320,7 +320,7 @@
             <inertial>
                 <origin xyz="-0.009999850929391957 -0.06893692335883117 0.01215561283786424" rpy="0 0 0"/>
                 <mass value="0.10579543620063496"/>
-                <inertia ixx="0.000357" iyy="1.9e-05" izz="0.000346" ixy="-0.0" iyz="6e-05" ixz="0.0"/>
+                <inertia ixx="0.000357" iyy="1.9e-05" izz="0.000346" ixy="0.0" iyz="6e-05" ixz="0.0"/>
             </inertial>
             <visual>
                 <origin xyz="-0.125077 -0.10857 0.073273" rpy="0 0 0"/>
@@ -341,7 +341,7 @@
             <inertial>
                 <origin xyz="-0.009999850931738746 -0.06893692336763138 -0.012155824519539338" rpy="0 0 0"/>
                 <mass value="0.10579543620063496"/>
-                <inertia ixx="0.000357" iyy="1.9e-05" izz="0.000346" ixy="-0.0" iyz="-6e-05" ixz="-0.0"/>
+                <inertia ixx="0.000357" iyy="1.9e-05" izz="0.000346" ixy="0.0" iyz="-6e-05" ixz="0.0"/>
             </inertial>
             <visual>
                 <origin xyz="-0.125077 -0.10857 -0.212714" rpy="0 0 0"/>
@@ -551,7 +551,7 @@
             <inertial>
                 <origin xyz="0.005241809157458366 0.005244020586440523 -0.006687434993275808" rpy="0 0 0"/>
                 <mass value="0.027575447003748806"/>
-                <inertia ixx="1.2e-05" iyy="7e-06" izz="1.5e-05" ixy="-0.0" iyz="4e-06" ixz="0.0"/>
+                <inertia ixx="1.2e-05" iyy="7e-06" izz="1.5e-05" ixy="0.0" iyz="4e-06" ixz="0.0"/>
             </inertial>
             <visual>
                 <origin xyz="-0.103011 0.079067 0.043975" rpy="0 0 0"/>
@@ -698,7 +698,7 @@
             <inertial>
                 <origin xyz="0.007469813078495494 0.010810047004377682 0.006925224736331809" rpy="0 0 0"/>
                 <mass value="0.02757541664931962"/>
-                <inertia ixx="1.2e-05" iyy="7e-06" izz="1.5e-05" ixy="-0.0" iyz="-4e-06" ixz="-0.0"/>
+                <inertia ixx="1.2e-05" iyy="7e-06" izz="1.5e-05" ixy="0.0" iyz="-4e-06" ixz="0.0"/>
             </inertial>
             <visual>
                 <origin xyz="-0.100783 0.084633 -0.183178" rpy="0 0 0"/>
@@ -719,7 +719,7 @@
             <inertial>
                 <origin xyz="-0.07015664807333664 0.00883491519637522 4.272772771568567e-07" rpy="0 0 0"/>
                 <mass value="0.10579543620063496"/>
-                <inertia ixx="3.3e-05" iyy="0.000333" izz="0.000357" ixy="8.9e-05" iyz="-0.0" ixz="0.0"/>
+                <inertia ixx="3.3e-05" iyy="0.000333" izz="0.000357" ixy="8.9e-05" iyz="0.0" ixz="0.0"/>
             </inertial>
             <visual>
                 <origin xyz="-0.07878 -0.200065 0.083844" rpy="0 0 0"/>
@@ -761,7 +761,7 @@
             <inertial>
                 <origin xyz="-0.07015664807242458 0.008834915186065578 3.610504858975183e-07" rpy="0 0 0"/>
                 <mass value="0.10579543620063496"/>
-                <inertia ixx="3.3e-05" iyy="0.000333" izz="0.000357" ixy="8.9e-05" iyz="-0.0" ixz="0.0"/>
+                <inertia ixx="3.3e-05" iyy="0.000333" izz="0.000357" ixy="8.9e-05" iyz="0.0" ixz="0.0"/>
             </inertial>
             <visual>
                 <origin xyz="-0.07878 -0.200065 -0.223284" rpy="0 0 0"/>
@@ -824,7 +824,7 @@
             <inertial>
                 <origin xyz="1.7210950097740207e-07 1.474634413051179e-07 0.005697853015208351" rpy="0 0 0"/>
                 <mass value="0.13687536371193987"/>
-                <inertia ixx="2.2e-05" iyy="2.2e-05" izz="3.8e-05" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+                <inertia ixx="2.2e-05" iyy="2.2e-05" izz="3.8e-05" ixy="0.0" iyz="0.0" ixz="0.0"/>
             </inertial>
             <visual>
                 <origin xyz="0.03493 -0.121456 0.10478" rpy="0 0 0"/>
@@ -845,7 +845,7 @@
             <inertial>
                 <origin xyz="1.7210949734836056e-07 1.4746372049845302e-07 -0.0024996058423814027" rpy="0 0 0"/>
                 <mass value="0.010089696045901653"/>
-                <inertia ixx="1e-06" iyy="1e-06" izz="3e-06" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+                <inertia ixx="1e-06" iyy="1e-06" izz="3e-06" ixy="0.0" iyz="0.0" ixz="0.0"/>
             </inertial>
             <visual>
                 <origin xyz="0.03493 -0.121456 0.10528" rpy="0 0 0"/>
@@ -887,7 +887,7 @@
             <inertial>
                 <origin xyz="1.720538281013706e-07 1.4744714180170426e-07 -0.005697064693052395" rpy="0 0 0"/>
                 <mass value="0.13687536371193984"/>
-                <inertia ixx="2.2e-05" iyy="2.2e-05" izz="3.8e-05" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+                <inertia ixx="2.2e-05" iyy="2.2e-05" izz="3.8e-05" ixy="0.0" iyz="0.0" ixz="0.0"/>
             </inertial>
             <visual>
                 <origin xyz="0.03493 -0.121456 -0.24422" rpy="0 0 0"/>
@@ -908,7 +908,7 @@
             <inertial>
                 <origin xyz="1.7205387938673544e-07 1.4744684180556522e-07 0.002500394164537345" rpy="0 0 0"/>
                 <mass value="0.010089696045901642"/>
-                <inertia ixx="1e-06" iyy="1e-06" izz="3e-06" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+                <inertia ixx="1e-06" iyy="1e-06" izz="3e-06" ixy="0.0" iyz="0.0" ixz="0.0"/>
             </inertial>
             <visual>
                 <origin xyz="0.03493 -0.121456 -0.24472" rpy="0 0 0"/>
@@ -950,7 +950,7 @@
             <inertial>
                 <origin xyz="-0.003928938015407821 -0.011151310450754293 0.008521613473048403" rpy="0 0 0"/>
                 <mass value="0.017815774190822364"/>
-                <inertia ixx="3e-06" iyy="6e-06" izz="5e-06" ixy="-0.0" iyz="1e-06" ixz="1e-06"/>
+                <inertia ixx="3e-06" iyy="6e-06" izz="5e-06" ixy="0.0" iyz="1e-06" ixz="1e-06"/>
             </inertial>
             <visual>
                 <origin xyz="0.090469 -0.225655 0.086844" rpy="0 0 0"/>
@@ -971,7 +971,7 @@
             <inertial>
                 <origin xyz="-0.012355744361756071 -0.00479145026741748 0.009279912028420337" rpy="0 0 0"/>
                 <mass value="0.024414319317139412"/>
-                <inertia ixx="8e-06" iyy="1.5e-05" izz="1e-05" ixy="-0.0" iyz="1e-06" ixz="6e-06"/>
+                <inertia ixx="8e-06" iyy="1.5e-05" izz="1e-05" ixy="0.0" iyz="1e-06" ixz="6e-06"/>
             </inertial>
             <visual>
                 <origin xyz="0.087037 -0.238193 0.093844" rpy="0 0 0"/>
@@ -1055,7 +1055,7 @@
             <inertial>
                 <origin xyz="-0.003928944709563065 -0.011151311045819151 -0.008520823250860177" rpy="0 0 0"/>
                 <mass value="0.01781578209705783"/>
-                <inertia ixx="3e-06" iyy="6e-06" izz="5e-06" ixy="-0.0" iyz="-1e-06" ixz="-1e-06"/>
+                <inertia ixx="3e-06" iyy="6e-06" izz="5e-06" ixy="0.0" iyz="-1e-06" ixz="-1e-06"/>
             </inertial>
             <visual>
                 <origin xyz="0.090469 -0.225655 -0.226284" rpy="0 0 0"/>
@@ -1076,7 +1076,7 @@
             <inertial>
                 <origin xyz="-0.012355757301481932 -0.004791417552428262 -0.009279097019659843" rpy="0 0 0"/>
                 <mass value="0.02441437178160215"/>
-                <inertia ixx="8e-06" iyy="1.5e-05" izz="1e-05" ixy="-0.0" iyz="-1e-06" ixz="-6e-06"/>
+                <inertia ixx="8e-06" iyy="1.5e-05" izz="1e-05" ixy="0.0" iyz="-1e-06" ixz="-6e-06"/>
             </inertial>
             <visual>
                 <origin xyz="0.087037 -0.238193 -0.233284" rpy="0 0 0"/>
@@ -1160,7 +1160,7 @@
             <inertial>
                 <origin xyz="0.022599910923873645 -0.1435763043291834 3.9415675201492917e-07" rpy="0 0 0"/>
                 <mass value="0.18514201335111086"/>
-                <inertia ixx="0.001883" iyy="2.9e-05" izz="0.001898" ixy="0.000163" iyz="-0.0" ixz="0.0"/>
+                <inertia ixx="0.001883" iyy="2.9e-05" izz="0.001898" ixy="0.000163" iyz="0.0" ixz="0.0"/>
             </inertial>
             <visual>
                 <origin xyz="0.134931 -0.129709 -0.06972" rpy="0 0 0"/>
@@ -1244,7 +1244,7 @@
             <inertial>
                 <origin xyz="0.020143060474379665 -0.004284392266024811 0.004022939693993005" rpy="0 0 0"/>
                 <mass value="0.04922049269032884"/>
-                <inertia ixx="1e-05" iyy="2.3e-05" izz="2.1e-05" ixy="1e-06" iyz="-0.0" ixz="-1e-06"/>
+                <inertia ixx="1e-05" iyy="2.3e-05" izz="2.1e-05" ixy="1e-06" iyz="0.0" ixz="-1e-06"/>
             </inertial>
             <visual>
                 <origin xyz="0.113262 -0.126494 -0.187453" rpy="0 0 0"/>
@@ -1286,7 +1286,7 @@
             <inertial>
                 <origin xyz="0.009688236645549117 -0.024337868846462135 0.0030003941618105823" rpy="0 0 0"/>
                 <mass value="0.016476308571348047"/>
-                <inertia ixx="7e-06" iyy="7e-06" izz="1e-06" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+                <inertia ixx="7e-06" iyy="7e-06" izz="1e-06" ixy="0.0" iyz="0.0" ixz="0.0"/>
             </inertial>
             <visual>
                 <origin xyz="0.117621 -0.161338 -0.06672" rpy="0 0 0"/>
@@ -1307,7 +1307,7 @@
             <inertial>
                 <origin xyz="0.01530160397822461 0.001338830476888292 -0.032499605838198733" rpy="0 0 0"/>
                 <mass value="0.1850319786268637"/>
-                <inertia ixx="0.000158" iyy="8.5e-05" izz="0.000105" ixy="6e-06" iyz="-0.0" ixz="0.0"/>
+                <inertia ixx="0.000158" iyy="8.5e-05" izz="0.000105" ixy="6e-06" iyz="0.0" ixz="0.0"/>
             </inertial>
             <visual>
                 <origin xyz="0.100492 -0.137651 -0.10222" rpy="0 0 0"/>
@@ -1328,7 +1328,7 @@
             <inertial>
                 <origin xyz="0.001867733279543149 -0.027510133622699086 5.545453799354894e-07" rpy="0 0 0"/>
                 <mass value="0.024142798048081008"/>
-                <inertia ixx="1.7e-05" iyy="1.4e-05" izz="3e-06" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+                <inertia ixx="1.7e-05" iyy="1.4e-05" izz="3e-06" ixy="0.0" iyz="0.0" ixz="0.0"/>
             </inertial>
             <visual>
                 <origin xyz="0.135429 -0.089513 -0.06972" rpy="0 0 0"/>
@@ -1433,7 +1433,7 @@
             <inertial>
                 <origin xyz="-0.0007653000056211667 0.02219887163701692 0.020290229696044937" rpy="0 0 0"/>
                 <mass value="0.016375691601812115"/>
-                <inertia ixx="5e-06" iyy="2e-06" izz="3e-06" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+                <inertia ixx="5e-06" iyy="2e-06" izz="3e-06" ixy="0.0" iyz="0.0" ixz="0.0"/>
             </inertial>
             <visual>
                 <origin xyz="0.101707 0.199789 -0.104025" rpy="0 0 0"/>
@@ -1454,7 +1454,7 @@
             <inertial>
                 <origin xyz="0.00914290933785189 0.022042515934657336 -0.020987455217608232" rpy="0 0 0"/>
                 <mass value="0.02738912858173898"/>
-                <inertia ixx="8e-06" iyy="6e-06" izz="7e-06" ixy="-0.0" iyz="0.0" ixz="-1e-06"/>
+                <inertia ixx="8e-06" iyy="6e-06" izz="7e-06" ixy="0.0" iyz="0.0" ixz="-1e-06"/>
             </inertial>
             <visual>
                 <origin xyz="0.101707 0.199789 -0.035415" rpy="0 0 0"/>
@@ -1475,7 +1475,7 @@
             <inertial>
                 <origin xyz="0.014346360507995579 -0.1745967975761272 -0.01796726304975938" rpy="0 0 0"/>
                 <mass value="0.017973082329243804"/>
-                <inertia ixx="2.4e-05" iyy="9e-06" izz="1.6e-05" ixy="2e-06" iyz="-2e-06" ixz="-0.0"/>
+                <inertia ixx="2.4e-05" iyy="9e-06" izz="1.6e-05" ixy="2e-06" iyz="-2e-06" ixz="0.0"/>
             </inertial>
             <visual>
                 <origin xyz="0.137545 -0.159595 -0.06672" rpy="0 0 0"/>
@@ -1496,7 +1496,7 @@
             <inertial>
                 <origin xyz="0.008809576195568117 0.0007709223741320936 0.02250039415655973" rpy="0 0 0"/>
                 <mass value="0.10002696530723762"/>
-                <inertia ixx="7.8e-05" iyy="2.2e-05" izz="6.5e-05" ixy="5e-06" iyz="-0.0" ixz="0.0"/>
+                <inertia ixx="7.8e-05" iyy="2.2e-05" izz="6.5e-05" ixy="5e-06" iyz="0.0" ixz="0.0"/>
             </inertial>
             <visual>
                 <origin xyz="0.129699 0.021882 -0.01172" rpy="0 0 0"/>
@@ -1517,7 +1517,7 @@
             <inertial>
                 <origin xyz="0.0011247038427605605 -0.01001039852193603 0.02444449539189178" rpy="0 0 0"/>
                 <mass value="0.017095940713325566"/>
-                <inertia ixx="8e-06" iyy="5e-06" izz="4e-06" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+                <inertia ixx="8e-06" iyy="5e-06" izz="4e-06" ixy="0.0" iyz="0.0" ixz="0.0"/>
             </inertial>
             <visual>
                 <origin xyz="0.12843 -0.009511 -0.06922" rpy="0 0 0"/>
@@ -1538,7 +1538,7 @@
             <inertial>
                 <origin xyz="0.014278545075256333 -0.01928744128549665 0.03561120322004074" rpy="0 0 0"/>
                 <mass value="0.04300493742939915"/>
-                <inertia ixx="2.2e-05" iyy="2e-05" izz="1e-05" ixy="0.0" iyz="-0.0" ixz="-4e-06"/>
+                <inertia ixx="2.2e-05" iyy="2e-05" izz="1e-05" ixy="0.0" iyz="0.0" ixz="-4e-06"/>
             </inertial>
             <visual>
                 <origin xyz="0.122449 0.024435 -0.05972" rpy="0 0 0"/>
@@ -1559,7 +1559,7 @@
             <inertial>
                 <origin xyz="-0.023929067947884963 -0.0004791829098020617 4.4941470037085374e-07" rpy="0 0 0"/>
                 <mass value="0.07961821960725156"/>
-                <inertia ixx="0.000112" iyy="7.3e-05" izz="4.4e-05" ixy="-6e-06" iyz="0.0" ixz="-0.0"/>
+                <inertia ixx="0.000112" iyy="7.3e-05" izz="4.4e-05" ixy="-6e-06" iyz="0.0" ixz="0.0"/>
             </inertial>
             <visual>
                 <origin xyz="0.097079 0.188201 -0.06972" rpy="0 0 0"/>
@@ -1597,453 +1597,455 @@
             </collision>
         </link> -->
 
-        <joint name="${prefix}_Rigid 1" type="fixed">
+        <joint name="${prefix}_Rigid1" type="fixed">
             <origin xyz="0.098178 0.07727 0.06972" rpy="0 0 0"/>
             <parent link="${prefix}_base_link"/>
             <child link="${prefix}_neck-chest-interface2_1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 2" type="fixed">
+        <joint name="${prefix}_Rigid2" type="fixed">
             <origin xyz="0.034406 0.025168 0.0" rpy="0 0 0"/>
             <parent link="${prefix}_neck-chest-interface2_1"/>
             <child link="${prefix}_2020_300mm_1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 3" type="fixed">
+        <joint name="${prefix}_Rigid3" type="fixed">
             <origin xyz="0.019924 -0.001743 -0.003" rpy="0 0 0"/>
             <parent link="${prefix}_2020_300mm_1"/>
             <child link="${prefix}_back-top__1__1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 4" type="fixed">
+        <joint name="${prefix}_Rigid4" type="fixed">
             <origin xyz="-0.006518 0.019009 -0.035324" rpy="0 0 0"/>
             <parent link="${prefix}_back-top__1__1"/>
             <child link="${prefix}_2020_150mm__1__1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 5" type="fixed">
+        <joint name="${prefix}_Rigid5" type="fixed">
             <origin xyz="-0.006518 0.019009 0.041325" rpy="0 0 0"/>
             <parent link="${prefix}_back-top__1__1"/>
             <child link="${prefix}_2020_150mm__5__1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 6" type="fixed">
+        <joint name="${prefix}_Rigid6" type="fixed">
             <origin xyz="0.00137 -0.030234 0.003" rpy="0 0 0"/>
             <parent link="${prefix}_back-top__1__1"/>
             <child link="${prefix}_back-middle-strap__1__1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 7" type="fixed">
+        <joint name="${prefix}_Rigid7" type="fixed">
             <origin xyz="-0.022632 0.055883 -0.103798" rpy="0 0 0"/>
             <parent link="${prefix}_2020_150mm__1__1"/>
             <child link="${prefix}_handle__1__1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 8" type="fixed">
+        <joint name="${prefix}_Rigid8" type="fixed">
             <origin xyz="-0.020657 0.051006 -0.106681" rpy="0 0 0"/>
             <parent link="${prefix}_2020_150mm__1__1"/>
             <child link="${prefix}_front-left-shoulder_1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 9" type="fixed">
+        <joint name="${prefix}_Rigid9" type="fixed">
             <origin xyz="-0.022632 0.055883 0.103798" rpy="0 0 0"/>
             <parent link="${prefix}_2020_150mm__5__1"/>
             <child link="${prefix}_front-right-shoulder_1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 10" type="fixed">
+        <joint name="${prefix}_Rigid10" type="fixed">
             <origin xyz="-0.003486 -0.039848 0.0" rpy="0 0 0"/>
             <parent link="${prefix}_back-middle-strap__1__1"/>
             <child link="${prefix}_back-bottom-strap-spine__1__1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 11" type="fixed">
+        <joint name="${prefix}_Rigid11" type="fixed">
             <origin xyz="-0.013813 -0.02321 -0.049813" rpy="0 0 0"/>
             <parent link="${prefix}_back-middle-strap__1__1"/>
             <child link="${prefix}_2020_100mm__4__1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 12" type="fixed">
+        <joint name="${prefix}_Rigid12" type="fixed">
             <origin xyz="-0.013813 -0.02321 0.049814" rpy="0 0 0"/>
             <parent link="${prefix}_back-middle-strap__1__1"/>
             <child link="${prefix}_2020_100mm__1__1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 13" type="fixed">
+        <joint name="${prefix}_Rigid13" type="fixed">
             <origin xyz="-0.010303 -0.042302 -0.042111" rpy="0 0 0"/>
             <parent link="${prefix}_back-bottom-strap-spine__1__1"/>
             <child link="${prefix}_2020_100mm__3__1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 14" type="fixed">
+        <joint name="${prefix}_Rigid14" type="fixed">
             <origin xyz="-0.010303 -0.042302 0.042112" rpy="0 0 0"/>
             <parent link="${prefix}_back-bottom-strap-spine__1__1"/>
             <child link="${prefix}_2020_100mm__2__1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 15" type="fixed">
+        <joint name="${prefix}_Rigid15" type="fixed">
             <origin xyz="-0.000256 -0.06214 0.002012" rpy="0 0 0"/>
             <parent link="${prefix}_front-left-shoulder_1"/>
             <child link="${prefix}_2020_200mm_1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 16" type="fixed">
+        <joint name="${prefix}_Rigid16" type="fixed">
             <origin xyz="0.001719 -0.067017 0.000871" rpy="0 0 0"/>
             <parent link="${prefix}_front-right-shoulder_1"/>
             <child link="${prefix}_2020_200mm__4__1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 17" type="fixed">
+        <joint name="${prefix}_Rigid17" type="fixed">
             <origin xyz="0.0 -0.167939 0.026566" rpy="0 0 0"/>
             <parent link="${prefix}_2020_200mm_1"/>
             <child link="${prefix}_left-front-rib-lower_1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 18" type="fixed">
+        <joint name="${prefix}_Rigid18" type="fixed">
             <origin xyz="0.0 -0.166897 -0.032475" rpy="0 0 0"/>
             <parent link="${prefix}_2020_200mm__4__1"/>
             <child link="${prefix}_right-front-rib-lower_1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 19" type="fixed">
+        <joint name="${prefix}_Rigid19" type="fixed">
             <origin xyz="-0.00055 -0.044076 0.027605" rpy="0 0 0"/>
             <parent link="${prefix}_left-front-rib-lower_1"/>
             <child link="${prefix}_2020_150mm_1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 20" type="fixed">
+        <joint name="${prefix}_Rigid20" type="fixed">
             <origin xyz="-0.00055 -0.045118 -0.021696" rpy="0 0 0"/>
             <parent link="${prefix}_right-front-rib-lower_1"/>
             <child link="${prefix}_2020_150mm__2__1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 21" type="fixed">
+        <joint name="${prefix}_Rigid21" type="fixed">
             <origin xyz="-0.006222 -0.300601 0.003" rpy="0 0 0"/>
             <parent link="${prefix}_2020_300mm_1"/>
             <child link="${prefix}_naval-strap__1__1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 22" type="fixed">
+        <joint name="${prefix}_Rigid22" type="fixed">
             <origin xyz="-0.013983 -0.003413 -0.06857" rpy="0 0 0"/>
             <parent link="${prefix}_2020_100mm__4__1"/>
             <child link="${prefix}_left-middle-rib_1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 23" type="fixed">
+        <joint name="${prefix}_Rigid23" type="fixed">
             <origin xyz="-0.053361 -0.008193 -0.014317" rpy="0 0 0"/>
             <parent link="${prefix}_left-middle-rib_1"/>
             <child link="${prefix}_2020_200mm__8__1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 24" type="fixed">
+        <joint name="${prefix}_Rigid24" type="fixed">
             <origin xyz="-0.168195 -0.02094 0.013451" rpy="0 0 0"/>
             <parent link="${prefix}_2020_200mm__8__1"/>
             <child link="${prefix}_rear-left-rib_1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 25" type="fixed">
+        <joint name="${prefix}_Rigid25" type="fixed">
             <origin xyz="0.039522 -0.033519 0.002508" rpy="0 0 0"/>
             <parent link="${prefix}_rear-left-rib_1"/>
             <child link="${prefix}_2020_200mm__2__1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 26" type="fixed">
+        <joint name="${prefix}_Rigid26" type="fixed">
             <origin xyz="0.158963 -0.060253 0.003046" rpy="0 0 0"/>
             <parent link="${prefix}_2020_200mm__2__1"/>
             <child link="${prefix}_left-lower-rib-side_1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 27" type="fixed">
+        <joint name="${prefix}_Rigid27" type="fixed">
             <origin xyz="0.029717 0.001204 -0.006361" rpy="0 0 0"/>
             <parent link="${prefix}_rear-left-rib_1"/>
             <child link="${prefix}_left-battery-mount_1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 28" type="fixed">
+        <joint name="${prefix}_Rigid28" type="fixed">
             <origin xyz="-0.014439 -0.00936 0.067919" rpy="0 0 0"/>
             <parent link="${prefix}_2020_100mm__1__1"/>
             <child link="${prefix}_right-middle-rib_1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 29" type="fixed">
+        <joint name="${prefix}_Rigid29" type="fixed">
             <origin xyz="-0.052905 -0.002246 0.014968" rpy="0 0 0"/>
             <parent link="${prefix}_right-middle-rib_1"/>
             <child link="${prefix}_2020_200mm__1__1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 30" type="fixed">
+        <joint name="${prefix}_Rigid30" type="fixed">
             <origin xyz="-0.167348 -0.02688 -0.013452" rpy="0 0 0"/>
             <parent link="${prefix}_2020_200mm__1__1"/>
             <child link="${prefix}_rear-right-rib_1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 31" type="fixed">
+        <joint name="${prefix}_Rigid31" type="fixed">
             <origin xyz="0.038675 -0.027579 -0.002507" rpy="0 0 0"/>
             <parent link="${prefix}_rear-right-rib_1"/>
             <child link="${prefix}_2020_200mm__9__1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 32" type="fixed">
+        <joint name="${prefix}_Rigid32" type="fixed">
             <origin xyz="0.02887 0.007144 0.006362" rpy="0 0 0"/>
             <parent link="${prefix}_rear-right-rib_1"/>
             <child link="${prefix}_right-battery-mount_1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 33" type="fixed">
+        <joint name="${prefix}_Rigid33" type="fixed">
             <origin xyz="0.156735 -0.065819 -0.003284" rpy="0 0 0"/>
             <parent link="${prefix}_2020_200mm__9__1"/>
             <child link="${prefix}_right-lower-rib-side_1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 34" type="fixed">
+        <joint name="${prefix}_Rigid34" type="fixed">
             <origin xyz="-0.046553 0.029355 -0.008559" rpy="0 0 0"/>
             <parent link="${prefix}_front-left-shoulder_1"/>
             <child link="${prefix}_2020_200mm__5__1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 35" type="fixed">
+        <joint name="${prefix}_Rigid35" type="fixed">
             <origin xyz="0.028936 -0.00792 0.00825" rpy="0 0 0"/>
             <parent link="${prefix}_2020_200mm__5__1"/>
             <child link="${prefix}_right-shoulder-motor-adapter_MIR_1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 36" type="fixed">
+        <joint name="${prefix}_Rigid36" type="fixed">
             <origin xyz="-0.044578 0.024478 0.011441" rpy="0 0 0"/>
             <parent link="${prefix}_front-right-shoulder_1"/>
             <child link="${prefix}_2020_200mm__7__1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 37" type="fixed">
+        <joint name="${prefix}_Rigid37" type="fixed">
             <origin xyz="0.028936 -0.00792 -0.00825" rpy="0 0 0"/>
             <parent link="${prefix}_2020_200mm__7__1"/>
             <child link="${prefix}_right-shoulder-motor-adapter_1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 38" type="fixed">
+        <joint name="${prefix}_Rigid38" type="fixed">
             <origin xyz="-0.142639 -0.017689 0.006014" rpy="0 0 0"/>
             <parent link="${prefix}_right-shoulder-motor-adapter_MIR_1"/>
             <child link="${prefix}_RMD-X10__1_Stator_1"/>
         </joint>
 
-        <joint name="${prefix}_Revolute 39" type="continuous">
+        <joint name="LH_yaw" type="revolute">
             <origin xyz="-7e-06 -0.053 -0.0352" rpy="0 0 0"/>
             <parent link="${prefix}_RMD-X10__1_Stator_1"/>
             <child link="${prefix}_RMD-X10__1_Rotor_1"/>
-            <axis xyz="-0.0 0.0 -1.0"/>
+            <axis xyz="0.0 0.0 -1.0"/>
+            <limit upper="${PI}" lower="${-PI}" velocity="10.0" effort="10.0"/>
         </joint>
 
-        <!-- <joint name="${prefix}_Rigid 40" type="fixed">
+        <!-- <joint name="${prefix}_Rigid40" type="fixed">
             <origin xyz="0.0 0.0 -0.0005" rpy="0 0 0"/>
             <parent link="${prefix}_RMD-X10__1_Rotor_1"/>
             <child link="${prefix}_dumLeftArm_1"/>
         </joint> -->
 
-        <joint name="${prefix}_Rigid 41" type="fixed">
+        <joint name="${prefix}_Rigid41" type="fixed">
             <origin xyz="-0.142639 -0.017689 -0.006014" rpy="0 0 0"/>
             <parent link="${prefix}_right-shoulder-motor-adapter_1"/>
             <child link="${prefix}_RMD-X10Stator_1"/>
         </joint>
 
-        <joint name="${prefix}_Revolute 42" type="continuous">
+        <joint name="RH_yaw" type="revolute">
             <origin xyz="-7e-06 -0.053 0.0352" rpy="0 0 0"/>
             <parent link="${prefix}_RMD-X10Stator_1"/>
             <child link="${prefix}_RMD-X10Rotot_1"/>
-            <axis xyz="-0.0 -0.0 1.0"/>
+            <axis xyz="0.0 0.0 1.0"/>
+            <limit upper="${PI}" lower="${-PI}" velocity="10.0" effort="10.0"/>
         </joint>
 
-        <!-- <joint name="${prefix}_Rigid 43" type="fixed">
+        <!-- <joint name="${prefix}_Rigid43" type="fixed">
             <origin xyz="0.0 0.0 0.0005" rpy="0 0 0"/>
             <parent link="${prefix}_RMD-X10Rotot_1"/>
             <child link="${prefix}_dumRightArm_1"/>
         </joint> -->
 
-        <joint name="${prefix}_Rigid 44" type="fixed">
+        <joint name="${prefix}_Rigid44" type="fixed">
             <origin xyz="-0.163969 0.04488 0.003" rpy="0 0 0"/>
             <parent link="${prefix}_2020_200mm__5__1"/>
             <child link="${prefix}_right-shoulder-top1_1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 45" type="fixed">
+        <joint name="${prefix}_Rigid45" type="fixed">
             <origin xyz="-0.169249 0.02559 -0.003" rpy="0 0 0"/>
             <parent link="${prefix}_2020_200mm__5__1"/>
             <child link="${prefix}_right-shoulder-under1_1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 46" type="fixed">
+        <joint name="${prefix}_Rigid46" type="fixed">
             <origin xyz="-0.165817 0.038128 -0.01" rpy="0 0 0"/>
             <parent link="${prefix}_2020_200mm__5__1"/>
             <child link="${prefix}_right-rear-shoulder_MIR_1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 47" type="fixed">
+        <joint name="${prefix}_Rigid47" type="fixed">
             <origin xyz="-0.017044 -0.021883 0.038115" rpy="0 0 0"/>
             <parent link="${prefix}_right-shoulder-top1_1"/>
             <child link="${prefix}_2020_150mm__4__1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 48" type="fixed">
+        <joint name="${prefix}_Rigid48" type="fixed">
             <origin xyz="-0.031009 -0.068575 0.09563" rpy="0 0 0"/>
             <parent link="${prefix}_2020_150mm__4__1"/>
             <child link="${prefix}_rear-left-spine-support_1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 49" type="fixed">
+        <joint name="${prefix}_Rigid49" type="fixed">
             <origin xyz="-0.035192 -0.060257 0.098993" rpy="0 0 0"/>
             <parent link="${prefix}_2020_150mm__4__1"/>
             <child link="${prefix}_back-top_1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 50" type="fixed">
+        <joint name="${prefix}_Rigid50" type="fixed">
             <origin xyz="-0.169249 0.02559 0.003" rpy="0 0 0"/>
             <parent link="${prefix}_2020_200mm__7__1"/>
             <child link="${prefix}_right-shoulder-under_1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 51" type="fixed">
+        <joint name="${prefix}_Rigid51" type="fixed">
             <origin xyz="-0.165817 0.038128 0.01" rpy="0 0 0"/>
             <parent link="${prefix}_2020_200mm__7__1"/>
             <child link="${prefix}_right-rear-shoulder_1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 52" type="fixed">
+        <joint name="${prefix}_Rigid52" type="fixed">
             <origin xyz="-0.163969 0.04488 0.003" rpy="0 0 0"/>
             <parent link="${prefix}_2020_200mm__7__1"/>
             <child link="${prefix}_right-shoulder-top_1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 53" type="fixed">
+        <joint name="${prefix}_Rigid53" type="fixed">
             <origin xyz="-0.017044 -0.021883 -0.044114" rpy="0 0 0"/>
             <parent link="${prefix}_right-shoulder-top_1"/>
             <child link="${prefix}_2020_150mm__3__1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 54" type="fixed">
+        <joint name="${prefix}_Rigid54" type="fixed">
             <origin xyz="-0.025447 -0.070827 -0.09563" rpy="0 0 0"/>
             <parent link="${prefix}_2020_150mm__3__1"/>
             <child link="${prefix}_rear-left-spine-support_MIR_1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 55" type="fixed">
+        <joint name="${prefix}_Rigid55" type="fixed">
             <origin xyz="0.002494 -0.033096 0.013456" rpy="0 0 0"/>
             <parent link="${prefix}_back-top_1"/>
             <child link="${prefix}_2020_350mm_1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 56" type="fixed">
+        <joint name="${prefix}_Rigid56" type="fixed">
             <origin xyz="-0.00149 -0.033444 0.013456" rpy="0 0 0"/>
             <parent link="${prefix}_back-top_1"/>
             <child link="${prefix}_back-middle-strap_1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 57" type="fixed">
+        <joint name="${prefix}_Rigid57" type="fixed">
             <origin xyz="0.013059 -0.014593 -0.049813" rpy="0 0 0"/>
             <parent link="${prefix}_back-middle-strap_1"/>
             <child link="${prefix}_2020_100mm__8__1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 58" type="fixed">
+        <joint name="${prefix}_Rigid58" type="fixed">
             <origin xyz="0.013059 -0.014593 0.049814" rpy="0 0 0"/>
             <parent link="${prefix}_back-middle-strap_1"/>
             <child link="${prefix}_2020_100mm__5__1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 59" type="fixed">
+        <joint name="${prefix}_Rigid59" type="fixed">
             <origin xyz="0.012594 0.011726 0.067919" rpy="0 0 0"/>
             <parent link="${prefix}_2020_100mm__5__1"/>
             <child link="${prefix}_rear-right-shoulder_1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 60" type="fixed">
+        <joint name="${prefix}_Rigid60" type="fixed">
             <origin xyz="0.012594 0.011726 -0.067919" rpy="0 0 0"/>
             <parent link="${prefix}_2020_100mm__8__1"/>
             <child link="${prefix}_rear-right-shoulder_MIR_1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 61" type="fixed">
+        <joint name="${prefix}_Rigid61" type="fixed">
             <origin xyz="0.01731 0.031629 -0.003" rpy="0 0 0"/>
             <parent link="${prefix}_2020_350mm_1"/>
             <child link="${prefix}_head-power-supply-bracket_1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 62" type="fixed">
+        <joint name="${prefix}_Rigid62" type="fixed">
             <origin xyz="0.017129 -0.023687 0.0355" rpy="0 0 0"/>
             <parent link="${prefix}_head-power-supply-bracket_1"/>
             <child link="${prefix}_Power_Converter__1__1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 63" type="fixed">
+        <joint name="${prefix}_Rigid63" type="fixed">
             <origin xyz="0.003486 -0.039848 0.0" rpy="0 0 0"/>
             <parent link="${prefix}_back-middle-strap_1"/>
             <child link="${prefix}_back-bottom-strap-spine_1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 64" type="fixed">
+        <joint name="${prefix}_Rigid64" type="fixed">
             <origin xyz="0.010303 -0.042302 -0.042111" rpy="0 0 0"/>
             <parent link="${prefix}_back-bottom-strap-spine_1"/>
             <child link="${prefix}_2020_100mm__6__1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 65" type="fixed">
+        <joint name="${prefix}_Rigid65" type="fixed">
             <origin xyz="0.010303 -0.042302 0.042112" rpy="0 0 0"/>
             <parent link="${prefix}_back-bottom-strap-spine_1"/>
             <child link="${prefix}_2020_100mm__7__1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 66" type="fixed">
+        <joint name="${prefix}_Rigid66" type="fixed">
             <origin xyz="-0.017494 -0.053384 0.03094" rpy="0 0 0"/>
             <parent link="${prefix}_rear-left-rib_1"/>
             <child link="${prefix}_2020_200mm__3__1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 67" type="fixed">
+        <joint name="${prefix}_Rigid67" type="fixed">
             <origin xyz="-0.018341 -0.047444 -0.030939" rpy="0 0 0"/>
             <parent link="${prefix}_rear-right-rib_1"/>
             <child link="${prefix}_2020_200mm__6__1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 68" type="fixed">
+        <joint name="${prefix}_Rigid68" type="fixed">
             <origin xyz="0.011261 -0.16111 -0.054005" rpy="0 0 0"/>
             <parent link="${prefix}_2020_200mm__6__1"/>
             <child link="${prefix}_6band__2__1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 69" type="fixed">
+        <joint name="${prefix}_Rigid69" type="fixed">
             <origin xyz="0.011261 -0.16111 0.054004" rpy="0 0 0"/>
             <parent link="${prefix}_2020_200mm__3__1"/>
             <child link="${prefix}_6band__1__1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 70" type="fixed">
+        <joint name="${prefix}_Rigid70" type="fixed">
             <origin xyz="-0.002614 0.029886 -0.003" rpy="0 0 0"/>
             <parent link="${prefix}_2020_350mm_1"/>
             <child link="${prefix}_battery-monitor-holder_1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 71" type="fixed">
+        <joint name="${prefix}_Rigid71" type="fixed">
             <origin xyz="0.007846 -0.181477 -0.055" rpy="0 0 0"/>
             <parent link="${prefix}_battery-monitor-holder_1"/>
             <child link="${prefix}_voltage-meter_1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 72" type="fixed">
+        <joint name="${prefix}_Rigid72" type="fixed">
             <origin xyz="0.009115 -0.150084 0.0025" rpy="0 0 0"/>
             <parent link="${prefix}_battery-monitor-holder_1"/>
             <child link="${prefix}_button-holder_1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 73" type="fixed">
+        <joint name="${prefix}_Rigid73" type="fixed">
             <origin xyz="0.015096 -0.18403 -0.007" rpy="0 0 0"/>
             <parent link="${prefix}_battery-monitor-holder_1"/>
             <child link="${prefix}_killswitch-spine-interface_1"/>
         </joint>
 
-        <joint name="${prefix}_Rigid 75" type="fixed">
+        <joint name="${prefix}_Rigid75" type="fixed">
             <origin xyz="0.037852 -0.31791 0.0" rpy="0 0 0"/>
             <parent link="${prefix}_2020_350mm_1"/>
             <child link="${prefix}_lumbar-strap_1"/>
         </joint>
 
-        <!-- <joint name="${prefix}_Rigid 76" type="fixed">
+        <!-- <joint name="${prefix}_Rigid76" type="fixed">
             <origin xyz="-0.023253 -0.021955 0.0" rpy="0 0 0"/>
             <parent link="${prefix}_lumbar-strap_1"/>
             <child link="${prefix}_dumWaist_1"/>
