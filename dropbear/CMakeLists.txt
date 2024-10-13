@@ -14,9 +14,9 @@ install(
   PROGRAMS
     ${PROJECT_NAME}/hand_trajectory_publisher.py
     ${PROJECT_NAME}/leg_trajectory_publisher.py
+    ${PROJECT_NAME}/pelvic_girdle_joints_trajectory_publisher.py
   DESTINATION
     lib/${PROJECT_NAME}
-
 )
 
 # Move folders to the shared folder
