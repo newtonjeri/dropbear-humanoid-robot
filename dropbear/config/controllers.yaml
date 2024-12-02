@@ -45,7 +45,7 @@ stewart_slider_controller:
 right_hand_controller:
   ros__parameters:
     joints:
-      - RH_yaw
+      # - RH_yaw
       - RH_pitch
       - RH_roll
       - RH_elbow_joint

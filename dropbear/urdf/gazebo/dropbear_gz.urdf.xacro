@@ -15,6 +15,7 @@
 
     <!-- Arm xacro -->
     <xacro:include filename="$(find dropbear)/urdf/gazebo/arm.xacro"/>
+    <!-- <xacro:include filename="$(find dropbear)/urdf/gazebo/p.xacro"/> -->
     <!-- Leg Xacro -->
     <xacro:include filename="$(find dropbear)/urdf/gazebo/leg.xacro"/>
     <!-- Head xacro -->
@@ -35,11 +36,11 @@
     <!-- base_link to world joint -->
     <joint name="base_link_sim_world_joint" type="fixed">
         <origin xyz="0.0 0.0 1.4" rpy="${PI/2} 0.0 0.0"/>
-        <!-- <origin xyz="0.0 0.0 1.4" rpy="0.0 0.0 0.0"/> -->
         <parent link="world"/>
         <!-- Torso Base link -->
         <child link="torso_base_link"/>
         <!-- <child link="RL_base_link"/> -->
+        <!-- <child link="RH_base_link"/> -->
     </joint>
 
     <!-- <joint name="base_link_sim_world_joint_2" type="fixed">
@@ -61,10 +62,16 @@
     <xacro:arm_macro prefix="RH" folder = "rightarm" parent = "torso_RMD-X10Rotot_1" sign = "1">
         <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
     </xacro:arm_macro>
+    <!-- <xacro:arm_macro prefix="RH" folder = "rightarm" parent = "RH_base_link" sign = "1">
+        <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+    </xacro:arm_macro> -->
     <!-- Left Arm -->
     <xacro:arm_macro prefix="LH" folder = "leftarm" parent = "torso_RMD-X10__1_Rotor_1" sign = "-1">
         <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
     </xacro:arm_macro>
+    <!-- <xacro:arm_macro prefix="LH" folder = "leftarm" parent = "LH_base_link" sign = "-1">
+        <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+    </xacro:arm_macro> -->
 
     <!-- Right Leg -->
     <xacro:leg_macro prefix = "RL" folder = "rightleg" parent = "PG_motor-yaw-cap_1" sign = "1">

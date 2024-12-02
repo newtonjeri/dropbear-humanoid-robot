@@ -74,7 +74,7 @@ def generate_launch_description():
 
     return LaunchDescription([
         joint_state_broadcaster,
-        stewart_prismatic_cont,
+        # stewart_prismatic_cont,
         right_hand_cont,
         left_hand_cont,
         waist_cont,

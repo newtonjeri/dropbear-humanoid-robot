@@ -22,7 +22,7 @@ class HandJTCPublisher(Node):
         if self.leg == 'right':
             self.get_logger().info("Hand: Right Hand")
             self.get_logger().info("Controlled Joints: RH_yaw, RH_pitch, RH_roll, RH_elbow_joint, RH_wrist_roll")
-            self.joints = ["RH_yaw", "RH_pitch", "RH_roll", "RH_elbow_joint", "RH_wrist_roll"]
+            self.joints = [ "RH_pitch", "RH_roll", "RH_elbow_joint", "RH_wrist_roll"]
             # Topic to publish to
             self.publish_topic = "/right_hand_controller/joint_trajectory"
         elif self.leg == 'left':
