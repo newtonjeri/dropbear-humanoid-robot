@@ -522,14 +522,14 @@
             <visual>
                 <origin xyz="0.060896 0.378613 ${sign*-0.11}" rpy="0 0 0"/>
                 <geometry>
-                    <mesh filename="package://dropbear/meshes/${folder}/knee-lock-2_1.stl" scale="0.001 0.001 0.001"/>
+                    <mesh filename="package://dropbear/meshes/${folder}/knee-lock-2-b_1.stl" scale="0.001 0.001 0.001"/>
                 </geometry>
                 <material name="opaque191191191"/>
             </visual>
             <collision>
                 <origin xyz="0.060896 0.378613 ${sign*-0.11}" rpy="0 0 0"/>
                 <geometry>
-                    <mesh filename="package://dropbear/meshes/${folder}/knee-lock-2_1.stl" scale="0.001 0.001 0.001"/>
+                    <mesh filename="package://dropbear/meshes/${folder}/knee-lock-2-b_1.stl" scale="0.001 0.001 0.001"/>
                 </geometry>
             </collision>
         </link>
