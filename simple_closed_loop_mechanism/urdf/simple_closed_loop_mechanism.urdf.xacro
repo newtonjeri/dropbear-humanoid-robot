@@ -3,7 +3,7 @@
 
     <xacro:property name="PI" value="3.142"/>
     <xacro:include filename="$(find simple_closed_loop_mechanism)/urdf/ros2_control.xacro"/>
-    
+    <!-- <xacro:include filename="$(find simple_closed_loop_mechanism)/urdf/transmission.xacro"/> -->
 
     <link name="world"/>
 
@@ -133,13 +133,79 @@
         </collision>
     </link>
 
+    <!-- <link name="Link4">
+        <inertial>
+            <origin xyz="0.0 -0.05 0.0" rpy="0.0 0.0 0.0"/>
+            <mass value="0.0805"/>
+            <inertia ixx="0.000268715" ixy="0.0" ixz="0.0" iyy="0.00000134165" iyz="0.0" izz="0.000268715"/>
+        </inertial>
+
+        <visual name="">
+            <origin xyz="0.0 -0.05 0.0" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="0.01 -0.10 0.01"/>
+            </geometry>
+            <material name="">
+                <color rgba="0.0 0.0 0.8 1.0"/>
+            </material>
+        </visual>
+
+        <collision>
+            <origin xyz="0.0 -0.05 0.0" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="0.01 -0.10 0.01"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="Link5">
+        <inertial>
+            <origin xyz="0.0 0.05 0.0" rpy="0.0 0.0 0.0"/>
+            <mass value="0.0805"/>
+            <inertia ixx="0.000268715" ixy="0.0" ixz="0.0" iyy="0.00000134165" iyz="0.0" izz="0.000268715"/>
+        </inertial>
+
+        <visual name="">
+            <origin xyz="0.0 0.05 0.0" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="0.01 -0.10 0.01"/>
+            </geometry>
+            <material name="">
+                <color rgba="0.0 0.0 0.8 1.0"/>
+            </material>
+        </visual>
+
+        <collision>
+            <origin xyz="0.0 0.05 0.0" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="0.01 -0.10 0.01"/>
+            </geometry>
+        </collision>
+    </link> -->
+
+    <!-- <joint name="Joint4" type="revolute">
+        <parent link="Link1"/>
+        <child link="Link5"/>
+        <axis xyz="1 0 0"/>
+        <limit lower="-3.14159" upper="3.14159" velocity="50.0" effort="1000.0"/>
+        <origin xyz="0 0 -0.075" rpy="0 0 0"/>
+    </joint> -->
+
+
+    <!-- <gazebo>
+        <joint name="Joint5Gz" type="fixed">
+            <pose relative_to="Link4">0 -0.1 0 0 0 0</pose>
+            <parent>Link4</parent>
+            <child>Link5</child>
+        </joint>
+    </gazebo> -->
+
+
     <gazebo>
-        <plugin name="gazebo_ros" filename="libgazebo_ros_api_plugin.so"/>
-        <joint name="Revolute1" type="revolute">
-            <pose>0 0 -0.075 0 0 0</pose>
+        <joint name="Joint4_gz" type="revolute">
+            <pose relative_to="Link4">0 -0.2 0 0 0 0</pose>
             <parent>Link4</parent>
             <child>Link1</child>
-
             <axis>
                 <xyz>1 0 0</xyz>
             </axis>
@@ -153,8 +219,11 @@
                 <damping>10.0</damping>
                 <friction>10.0</friction>
             </dynamics>
+
+            <physics>
+                <provide_feedback>true</provide_feedback>
+            </physics>
         </joint>
     </gazebo>
-
 
 </robot>

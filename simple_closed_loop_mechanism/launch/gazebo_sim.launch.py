@@ -42,6 +42,7 @@ def generate_launch_description():
        cmd=[
             'gzserver',
             '-s',
+            '--verbose',
             'libgazebo_ros_init.so',
             '-s',
             'libgazebo_ros_factory.so',
@@ -52,10 +53,10 @@ def generate_launch_description():
     start_gazebo_client_cmd = ExecuteProcess(
         cmd=[
             'gzclient',
-            '-s',
-            'libgazebo_ros_init.so',
-            '-s',
-            'libgazebo_ros_factory.so',
+            # '-s',
+            # 'libgazebo_ros_init.so',
+            # '-s',
+            # 'libgazebo_ros_factory.so',
         ],
         output='screen',)
     # gazebo spawn entity

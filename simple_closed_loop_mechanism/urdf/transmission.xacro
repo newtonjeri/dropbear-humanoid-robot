@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="simple+closed_loop_mechanism_transmisions">
+
+
+<transmission name="Joint2_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <actuator name="Joint2_motor">
+        <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+    <joint name="Joint2">
+        <hardwareInterface>hardware_interface/PassiveJointInterface</hardwareInterface>
+    </joint>
+</transmission>
+
+<transmission name="Joint3_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <actuator name="Joint3_motor">
+        <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+    <joint name="Joint3">
+        <hardwareInterface>hardware_interface/PassiveJointInterface</hardwareInterface>
+    </joint>
+</transmission>
+
+<transmission name="Joint1_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <actuator name="Joint1_motor">
+        <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+    <joint name="Joint1">
+        <hardwareInterface>hardware_interface/PassiveJointInterface</hardwareInterface>
+    </joint>
+</transmission>
+
+</robot>
