@@ -1,0 +1,12 @@
+<library path="libgazebosim_hardware">
+    <class 
+        name="gazebo_ros2_control/GazeboSimHardware"
+        type="gazebo_ros2_control::GazeboSimHardware"
+        base_class="gazebo_ros2_control/GazeboSystemInterface"
+        base_class_type="gazebo_ros2_control::GazeboSystemInterface">
+    </class>
+        <description>
+            Gazebo hardware interface which enables taking feedback from passive joints.
+        </description>
+
+</library>
