@@ -2100,6 +2100,8 @@
             <child link="${prefix}_RMD-X10-S2_MIR4__1_Rotor_1"/>
             <axis xyz="1.0 0.0 0.0"/>
             <limit upper="${PI}" lower="${-PI}" velocity="10.0" effort="10.0"/>
+            <dynamics damping="10.0" friction="0.50"/>
+            
         </joint>
 
         <joint name="${prefix}_Rigid36" type="fixed">
@@ -2204,6 +2206,7 @@
             <child link="${prefix}_RMD-X10-V3__1_Rotor_1"/>
             <axis xyz="0.0 0.173648 -0.984808"/>
             <limit upper="${PI}" lower="${-PI}" velocity="10.0" effort="10.0"/>  
+            <dynamics damping="10.0" friction="0.50"/>
         </joint>
 
         <joint name="${prefix}_Rigid53" type="fixed">
@@ -2272,6 +2275,7 @@
             <child link="${prefix}_RMD-X10-S2_MIR4__2_Rotor_1"/>
             <axis xyz="1.0 0.0 0.0"/>
             <limit upper="${PI}" lower="${-PI}" velocity="10.0" effort="10.0"/>
+            <dynamics damping="10.0" friction="0.50"/>
         </joint>
 
         <joint name="${prefix}_Rigid64" type="fixed">
@@ -2382,6 +2386,7 @@
             <child link="${prefix}_RMD-X10-V3Rotor_1"/>
             <axis xyz="0.0 -0.173648 -0.984808"/>
             <limit upper="${PI}" lower="${-PI}" velocity="10.0" effort="10.0"/>
+            <dynamics damping="10.0" friction="0.50"/>
         </joint>
 
         <joint name="${prefix}_Rigid82" type="fixed">
