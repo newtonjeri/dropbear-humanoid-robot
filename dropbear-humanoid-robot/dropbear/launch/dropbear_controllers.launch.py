@@ -42,6 +42,15 @@ def generate_launch_description():
             ]
     )
 
+    right_foot_twist_controller = Node(
+        package="controller_manager",
+            executable="spawner",
+            arguments=[
+                "right_foot_twist_controller",
+                "--controller-manager", "/controller_manager",
+            ]
+    )
+
     left_leg_cont = Node(
             package="controller_manager",
             executable="spawner",
@@ -76,6 +85,15 @@ def generate_launch_description():
             executable="spawner",
             arguments=[
                 "left_leg_foot_controller",
+                "--controller-manager", "/controller_manager",
+            ]
+    )
+
+    left_foot_twist_controller = Node(
+        package="controller_manager",
+            executable="spawner",
+            arguments=[
+                "left_foot_twist_controller",
                 "--controller-manager", "/controller_manager",
             ]
     )
@@ -162,6 +180,8 @@ def generate_launch_description():
         # left_leg_knee_cont,
         lower_right_leg_cont,
         right_foot_controller,
+        right_foot_twist_controller,
         # lower_left_leg_cont,
         # left_foot_controller,
+        # left_foot_twist_controller,
     ])
