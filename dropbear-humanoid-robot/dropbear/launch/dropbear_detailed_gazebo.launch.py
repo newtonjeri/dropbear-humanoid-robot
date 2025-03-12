@@ -53,7 +53,7 @@ def generate_launch_description():
             'libgazebo_ros_init.so',
             '-s',
             'libgazebo_ros_factory.so',
-            "-u" # This ensures Gazebo starts paused
+            # "-u" # This ensures Gazebo starts paused
         ],        
         output='screen',
     )
