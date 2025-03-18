@@ -4,34 +4,34 @@
 
 <xacro:macro name = "arm_ros2_control" params = "prefix">
     
-    <xacro:joint prefix="${prefix}" name="pitch" min_value="-${PI}" max_value="-${PI}" command_interface="position">
+    <xacro:joint prefix="${prefix}" name="pitch" min_value="-${PI}" max_value="${PI}" command_interface="position">
     </xacro:joint>
 
-    <xacro:joint prefix="${prefix}" name="roll" min_value="-${PI}" max_value="-${PI}" command_interface="position">
+    <xacro:joint prefix="${prefix}" name="roll" min_value="-${PI}" max_value="${PI}" command_interface="position">
     </xacro:joint>
 
-    <xacro:joint prefix="${prefix}" name="elbow_joint" min_value="-${PI}" max_value="-${PI}" command_interface="effort">
+    <xacro:joint prefix="${prefix}" name="elbow_joint" min_value="-${PI}" max_value="${PI}" command_interface="effort">
     </xacro:joint>
 <!-- 
-    <xacro:joint prefix="${prefix}" name="Revolute32" min_value="-${PI}" max_value="-${PI}">
+    <xacro:joint prefix="${prefix}" name="Revolute32" min_value="-${PI}" max_value="${PI}">
     </xacro:joint>
 
-    <xacro:joint prefix="${prefix}" name="Revolute33" min_value="-${PI}" max_value="-${PI}">
+    <xacro:joint prefix="${prefix}" name="Revolute33" min_value="-${PI}" max_value="${PI}">
     </xacro:joint>
 
-    <xacro:joint prefix="${prefix}" name="Revolute41" min_value="-${PI}" max_value="-${PI}">
+    <xacro:joint prefix="${prefix}" name="Revolute41" min_value="-${PI}" max_value="${PI}">
     </xacro:joint>
 
-    <xacro:joint prefix="${prefix}" name="Revolute42" min_value="-${PI}" max_value="-${PI}">
+    <xacro:joint prefix="${prefix}" name="Revolute42" min_value="-${PI}" max_value="${PI}">
     </xacro:joint>
 
-    <xacro:joint prefix="${prefix}" name="Revolute44" min_value="-${PI}" max_value="-${PI}">
+    <xacro:joint prefix="${prefix}" name="Revolute44" min_value="-${PI}" max_value="${PI}">
     </xacro:joint> -->
 
-    <xacro:joint prefix="${prefix}" name="wrist_roll" min_value="-${PI}" max_value="-${PI}" command_interface="position">
+    <xacro:joint prefix="${prefix}" name="wrist_roll" min_value="-${PI}" max_value="${PI}" command_interface="position">
     </xacro:joint>
 
-    <xacro:joint prefix="${prefix}" name="yaw" min_value="-${PI}" max_value="-${PI}" command_interface="position">
+    <xacro:joint prefix="${prefix}" name="yaw" min_value="-${PI}" max_value="${PI}" command_interface="position">
     </xacro:joint>
 </xacro:macro>
 

@@ -9,7 +9,7 @@
    -->
 
     <xacro:macro name="leg_macro" params="prefix folder parent sign *origin">
-        <link name="${prefix}_base_link">
+        <!-- <link name="${prefix}_base_link">
             <inertial>
                 <origin xyz="-2.1374041718990718e-14 0.0 ${sign*0.005}" rpy="0 0 0"/>
                 <mass value="0.15083462441732975"/>
@@ -28,7 +28,7 @@
                     <mesh filename="package://dropbear/meshes/${folder}/base_link.stl" scale="0.001 0.001 0.001"/>
                 </geometry>
             </collision>
-        </link>
+        </link> -->
 
         <link name="${prefix}_RMD-X10-S2_MIR4__3_Stator_1">
             <inertial>

@@ -44,6 +44,12 @@ controller_manager:
     left_leg_foot_controller:
       type: joint_trajectory_controller/JointTrajectoryController
 
+    right_foot_twist_controller:
+      type: effort_controllers/JointGroupEffortController
+
+    left_foot_twist_controller:
+      type: effort_controllers/JointGroupEffortController
+
     joint_state_broadcaster:
       type: joint_state_broadcaster/JointStateBroadcaster
 
@@ -256,3 +262,12 @@ left_leg_foot_controller:
     allow_integration_in_goal_trajectories: true
 
 
+right_foot_twist_controller:
+  ros__parameters:
+    joints:
+      - RL_Revolute88
+
+left_foot_twist_controller:
+  ros__parameters:
+    joints:
+      - LL_Revolute88
