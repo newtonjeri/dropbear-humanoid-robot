@@ -20,6 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'hand_controller = dropbear_control.hand_joints_publisher_node:main',
+            'leg_controller = dropbear_control.leg_joints_publisher_node:main',
         ],
     },
 )
