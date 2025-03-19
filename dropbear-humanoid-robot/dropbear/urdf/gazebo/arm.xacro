@@ -1485,7 +1485,7 @@
       <origin xyz="-0.017 -0.015588 ${sign*-0.009}" rpy="0 0 0"/>
       <parent link="${prefix}_shoulder-ex-al-interface__2__1"/>
       <child link="${prefix}_RMD-X8-Pro_MIR8_MIR1__1__1"/>
-      <axis xyz="-1.0 0.0 0.0"/>
+      <axis xyz="${sign * 1.0} 0.0 0.0"/>
       <limit upper="${PI}" lower="${-PI}" velocity="10.0" effort="100.0"/>
     </joint>
 
@@ -1571,7 +1571,7 @@
       <origin xyz="0.009 -0.017 ${sign*-0.015588}" rpy="0 0 0"/>
       <parent link="${prefix}_shoulder-ex-al-interface__1__1"/>
       <child link="${prefix}_RMD-X8-Pro_MIR8_MIR1__3__1"/>
-      <axis xyz="0.0 -1.0 0.0"/>
+      <axis xyz="0.0 ${sign*1.0} 0.0"/>
       <limit upper="${PI}" lower="${-PI}" velocity="10.0" effort="100.0"/>
     </joint>
 
@@ -1621,7 +1621,7 @@
       <origin xyz="0.0 -0.042 ${sign*-0.037}" rpy="0 0 0"/>
       <parent link="${prefix}_RMD-X8-Pro_MIR8_MIR1__2__1"/>
       <child link="${prefix}_bicep-motor-mate_1"/>
-      <axis xyz="0.0 0.0 1.0"/>
+      <axis xyz="0.0 0.0 ${sign * 1.0}"/>
       <limit upper="${PI}" lower="${-PI}" velocity="10.0" effort="100.0"/>
       <dynamics damping="2.0"/>
       <dynamics friction="0.2"/>
@@ -1683,10 +1683,10 @@
           <effort>100.0</effort>
           <velocity>10.0</velocity>
         </limit>
-        <!-- <dynamics>
+        <dynamics>
           <damping>10.0</damping>
           <friction>0.50</friction>
-        </dynamics> -->
+        </dynamics>
       </joint>
     </gazebo>
 
@@ -1770,10 +1770,10 @@
           <!-- <effort>0.0</effort>
           <velocity>0.0</velocity> -->
         </limit>
-        <!-- <dynamics>
+        <dynamics>
           <damping>1.0</damping>
           <friction>0.5</friction>
-        </dynamics> -->
+        </dynamics>
       </joint>
 
       <joint name="${prefix}_Recolute48_gz" type="revolute">
@@ -1791,10 +1791,10 @@
           <velocity>0.0</velocity> -->
         </limit>
 
-        <!-- <dynamics>
+        <dynamics>
           <damping>2.0</damping>
           <friction>0.10</friction>
-        </dynamics> -->
+        </dynamics>
       </joint>
     </gazebo>
 
@@ -1862,7 +1862,7 @@
       <origin xyz="-0.012993 -0.036995 ${sign*-0.039944}" rpy="0 0 0"/>
       <parent link="${prefix}_RMD-X8-Pro_MIR8_MIR1__4__1"/>
       <child link="${prefix}_shoulder-ex-al-interface_1"/>
-      <axis xyz="-0.000375 -1.0 0.0"/>
+      <axis xyz="0.0 ${sign * 1.0} 0.0"/>
       <limit upper="${PI}" lower="${-PI}" velocity="10.0" effort="100.0"/>
     </joint>
 
