@@ -1829,7 +1829,7 @@
             <origin xyz="-7e-06 -0.053 -0.0352" rpy="0 0 0"/>
             <parent link="${prefix}_RMD-X10__1_Stator_1"/>
             <child link="${prefix}_RMD-X10__1_Rotor_1"/>
-            <axis xyz="0.0 0.0 -1.0"/>
+            <axis xyz="0.0 0.0 1.0"/>
             <limit upper="${PI}" lower="${-PI}" velocity="10.0" effort="10.0"/>
         </joint>
 
@@ -1849,7 +1849,7 @@
             <origin xyz="-7e-06 -0.053 0.0352" rpy="0 0 0"/>
             <parent link="${prefix}_RMD-X10Stator_1"/>
             <child link="${prefix}_RMD-X10Rotot_1"/>
-            <axis xyz="0.0 0.0 1.0"/>
+            <axis xyz="0.0 0.0 -1.0"/>
             <limit upper="${PI}" lower="${-PI}" velocity="10.0" effort="10.0"/>
         </joint>
 
