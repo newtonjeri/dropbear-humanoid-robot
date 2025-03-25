@@ -2,6 +2,7 @@
 
 import rclpy
 from rclpy.node import Node
+from rclpy.executors import MultiThreadedExecutor
 from trajectory_msgs.msg import JointTrajectory, JointTrajectoryPoint
 from std_msgs.msg import Float64MultiArray
 import math
@@ -32,46 +33,51 @@ class HandController(Node):
             'left': self.create_publisher(Float64MultiArray, '/left_hand_elbow_controller/commands', 10)
         }
 
-        # Timers for publishing at different rates
-        self.create_timer(1.0, self.hand_callback)  # 1 Hz for JTC
-        self.create_timer(1.0 / 60.0, self.elbow_callback)  # 60 Hz for Effort Controllers
+        # Timers for publishing at different rates (now in separate threads)
+        self.hand_timer = self.create_timer(1.0, self.hand_callback)  # 1 Hz for JTC
+        self.elbow_timer = self.create_timer(1.0 / 60.0, self.elbow_callback)  # 60 Hz for Effort Controllers
 
         # Joint angle arrays for hand motion
         self.hand_joint_angles = {
-            'right': [0.5, 0.0, 0.0, 0.5],  #  angles for right hand
-            'left': [0.5, 0.0, 0.0, 0.5]   #  angles for left hand
+            'right': [0.5, 0.0, 0.0, 0.5],  # angles for right hand
+            'left': [0.5, 0.0, 0.0, 0.5]   # angles for left hand
         }
         self.elbow_joint_efforts = {
-            'right': [5.0, 0.0, 0.0, 0.0, 0.0],  #  efforts for right elbow
-            'left': [5.0, 0.0, 0.0, 0.0, 0.0]  #  efforts for left elbow
+            'right': [5.0, 0.0, 0.0, 0.0, 0.0],  # efforts for right elbow
+            'left': [5.0, 0.0, 0.0, 0.0, 0.0]  # efforts for left elbow
         }
 
         # Step index and duration
         self.step_index = 0
         self.step_duration = 1.0  # 1 second per step
 
+        # Add thread synchronization if needed
+        self.lock = rclpy.Lock()
+
     def hand_callback(self):
         """Callback for Joint Trajectory Controllers (Hands)."""
-        for side in ['right', 'left']:
-            # Get current step angles
-            hand_angles = self.hand_joint_angles[side]
+        with self.lock:  # Protect shared resources
+            for side in ['right', 'left']:
+                # Get current step angles
+                hand_angles = self.hand_joint_angles[side]
 
-            # Publish hand trajectory
-            hand_trajectory = self.create_trajectory(self.hand_joints[side], hand_angles)
-            self.hand_pubs[side].publish(hand_trajectory)
+                # Publish hand trajectory
+                hand_trajectory = self.create_trajectory(self.hand_joints[side], hand_angles)
+                self.hand_pubs[side].publish(hand_trajectory)
 
-        # Increment step index
-        self.step_index = (self.step_index + 1) % len(self.hand_joint_angles['right'])
+            # Increment step index
+            self.step_index = (self.step_index + 1) % len(self.hand_joint_angles['right'])
 
     def elbow_callback(self):
         """Callback for Effort Controllers (Elbows)."""
-        for side in ['right', 'left']:
-            # Get current step efforts
-            elbow_effort = self.elbow_joint_efforts[side][self.step_index]
+        with self.lock:  # Protect shared resources
+            for side in ['right', 'left']:
+                # Get current step efforts
+                elbow_effort = self.elbow_joint_efforts[side][self.step_index]
 
-            # Publish elbow effort
-            elbow_effort_msg = self.create_effort(self.elbow_joints[side], [elbow_effort])
-            self.elbow_pubs[side].publish(elbow_effort_msg)
+                # Publish elbow effort
+                elbow_effort_msg = self.create_effort(self.elbow_joints[side], [elbow_effort])
+                self.elbow_pubs[side].publish(elbow_effort_msg)
 
     def create_trajectory(self, joint_names, positions):
         """Create a JointTrajectory message."""
@@ -91,10 +97,21 @@ class HandController(Node):
 
 def main(args=None):
     rclpy.init(args=args)
-    node = HandController()
-    rclpy.spin(node)
-    node.destroy_node()
-    rclpy.shutdown()
+    
+    try:
+        node = HandController()
+        
+        # Use MultiThreadedExecutor with 2 threads (one for each timer)
+        executor = MultiThreadedExecutor(num_threads=2)
+        executor.add_node(node)
+        
+        try:
+            executor.spin()
+        finally:
+            executor.shutdown()
+            node.destroy_node()
+    finally:
+        rclpy.shutdown()
 
 if __name__ == '__main__':
     main()
