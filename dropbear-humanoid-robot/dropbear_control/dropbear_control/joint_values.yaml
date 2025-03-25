@@ -1,0 +1,15 @@
+walking:
+  right_leg:
+    - hip_joint: -0.594
+    - knee_actuator_joint: -0.325
+    - Revolute67: 0.0
+
+  left_leg:
+    - hip_joint: 0.334
+    - knee_actuator_joint: 0.0
+    - Revolute67: 0.0
+
+  right_arm:
+    - yaw: 0.5
+  left_arm:
+    - yaw: 0.5
