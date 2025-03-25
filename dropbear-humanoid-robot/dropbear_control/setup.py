@@ -22,6 +22,7 @@ setup(
         'console_scripts': [
             'hand_controller = dropbear_control.hand_joints_publisher_node:main',
             'leg_controller = dropbear_control.leg_joints_publisher_node:main',
+            'walking_node = dropbear_control.walking_node:main',
         ],
     },
 )
