@@ -3,7 +3,6 @@ import rclpy
 from rclpy.node import Node
 from trajectory_msgs.msg import JointTrajectory, JointTrajectoryPoint
 from std_msgs.msg import Float64MultiArray
-import math
 
 class GaitManager:
     def __init__(self):
@@ -67,7 +66,7 @@ class GaitManager:
         }
         self.current_phase = 'left_swing'
         self.phase_progress = 0  # 0-100
-        self.phase_duration = 0.50  # seconds
+        self.phase_duration = 0.5  # seconds
         
     def update(self):
         self.current_phase = 'left_swing' if self.current_phase == 'right_swing' else 'right_swing'
