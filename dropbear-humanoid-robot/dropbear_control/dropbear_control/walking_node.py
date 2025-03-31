@@ -66,7 +66,7 @@ class GaitManager:
         }
         self.current_phase = 'left_swing'
         self.phase_progress = 0  # 0-100
-        self.phase_duration = 0.5  # seconds
+        self.phase_duration = 0.9  # seconds
         
     def update(self):
         self.current_phase = 'left_swing' if self.current_phase == 'right_swing' else 'right_swing'
