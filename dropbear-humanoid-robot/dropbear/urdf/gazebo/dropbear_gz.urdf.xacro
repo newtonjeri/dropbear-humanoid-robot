@@ -19,7 +19,7 @@
     <!-- Leg Xacro -->
     <xacro:include filename="$(find dropbear)/urdf/gazebo/leg.xacro"/>
     <!-- Head xacro -->
-    <!-- <xacro:include filename="$(find dropbear)/urdf/gazebo/head.xacro"/> -->
+    <xacro:include filename="$(find dropbear)/urdf/gazebo/head.xacro"/>
     <!-- Battery xacro -->
     <xacro:include filename="$(find dropbear)/urdf/gazebo/battery.xacro"/>
 
@@ -50,9 +50,9 @@
         <child link="LL_base_link"/>
     </joint> -->
     <!-- Head -->
-    <!-- <xacro:head_macro prefix="head" parent = "torso_base_link">
+    <xacro:head_macro prefix="head" parent = "torso_base_link">
         <origin xyz="0.0985 0.0798 0.069747" rpy="0 ${PI/2} 0"/>
-    </xacro:head_macro> -->
+    </xacro:head_macro>
 
     <!-- waist -->
     <xacro:pelvicgirdle_macro prefix="PG" parent = "torso_lumbar-strap_1">
