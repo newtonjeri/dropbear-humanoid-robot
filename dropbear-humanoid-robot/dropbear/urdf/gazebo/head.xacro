@@ -3610,6 +3610,37 @@
       <child link="${prefix}_m4-bolt-head_5"/>
     </joint>
 
+    <gazebo>
+        <joint name="${prefix}_platform_Rigid_1__146__gz" type="fixed">
+            <pose relative_to="${prefix}_new-neck_1">-0.01 0.005 0.009 0 0 0</pose>
+            <parent>${prefix}_10mm-ujoint-base__1__1</parent>
+            <child>${prefix}_new-neck_1</child>
+        </joint>
+
+        <joint name="${prefix}_platform_Rigig_2__148__gz" type="fixed">
+            <pose relative_to="${prefix}_new-neck_1">-0.06579 0.005034 -0.009 0 0 0</pose>
+            <parent>${prefix}_10mm-ujoint-base__2__1</parent>
+            <child>${prefix}_new-neck_1</child>
+        </joint>
+
+        <joint name="${prefix}_platform_Rigid_3__147_gz" type="fixed">
+            <pose relative_to="${prefix}_new-neck_1">0.0555 0.005 -0.1048 0 0 0</pose>
+            <parent>${prefix}_10mm-ujoint-base__4__1</parent>
+            <child>${prefix}_new-neck_1</child>
+        </joint>
+
+        <joint name="${prefix}_platform_Rigid_4__149_gz" type="fixed">
+            <pose relative_to="${prefix}_new-neck_1">0.06561 0.005029 -0.009 0 0 0</pose>
+            <parent>${prefix}_10mm-ujoint-base__5__1</parent>
+            <child>${prefix}_new-neck_1</child>
+        </joint>
+
+        <joint name="${prefix}_platform_Rigid_5__150_gz" type="fixed">
+            <pose relative_to="${prefix}_new-neck_1">0.01 0.005 0.009 0 0 0</pose>
+            <parent>${prefix}_10mm-ujoint-base_1</parent>
+            <child>${prefix}_new-neck_1</child>
+        </joint>
+    </gazebo>
 
   </xacro:macro>
 
