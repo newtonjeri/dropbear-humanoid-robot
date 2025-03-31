@@ -38,13 +38,6 @@ def generate_launch_description():
         parameters=[{"robot_description": robot_description}],
         arguments=[xacro_file],
     )
-
-    # gazebo
-    # gazebo = IncludeLaunchDescription(
-    #     PythonLaunchDescriptionSource(
-    #         os.path.join(get_package_share_directory("gazebo_ros"), "launch", "gazebo.launch.py")
-    #     )
-    # )
     
     start_gazebo_server_cmd = ExecuteProcess(
        cmd=[
@@ -53,7 +46,7 @@ def generate_launch_description():
             'libgazebo_ros_init.so',
             '-s',
             'libgazebo_ros_factory.so',
-            # "-u" # This ensures Gazebo starts paused
+            "-u" # This ensures Gazebo starts paused
         ],        
         output='screen',
     )
