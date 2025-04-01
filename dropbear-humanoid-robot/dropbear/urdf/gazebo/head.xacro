@@ -2909,11 +2909,12 @@
       <child link="${prefix}_stepper_1"/>
     </joint>
 
-    <joint name="${prefix}_Revolute 25" type="continuous">
+    <joint name="${prefix}_Platform_Base_Joint1" type="revolute">
       <origin xyz="-0.0155 0.024 -0.0155" rpy="0 0 0"/>
       <parent link="${prefix}_stepper__3__1"/>
       <child link="${prefix}_5mm-ujoint-base__5__1"/>
       <axis xyz="0.0 1.0 0.0"/>
+      <limit upper="${2*PI}" lower="0" effort="100" velocity="100"/>
     </joint>
 
     <joint name="${prefix}_Revolute 26" type="continuous">
@@ -2936,12 +2937,13 @@
       <child link="${prefix}_leadscrew__4__1"/>
     </joint>
 
-    <joint name="${prefix}_Slider 30" type="prismatic">
+    <joint name="${prefix}_LeadScrew1" type="prismatic">
       <origin xyz="-0.001673 -0.007187 0.00309" rpy="0 0 0"/>
       <parent link="${prefix}_leadscrew__4__1"/>
       <child link="${prefix}_screw-reciever_1"/>
       <axis xyz="-0.209066 -0.898398 0.386228"/>
       <limit upper="0.0" lower="-0.075" effort="100" velocity="100"/>
+      <mimic joint="${prefix}_Platform_Base_Joint1" multiplier="${-3/(80 * PI)}"/>
     </joint>
 
     <joint name="${prefix}_Rigid 31" type="fixed">
@@ -2975,11 +2977,12 @@
       <child link="${prefix}_10mm-ujoint-base__3__1"/>
     </joint>
 
-    <joint name="${prefix}_Revolute 36" type="continuous">
+    <joint name="${prefix}_Platform_Base_Joint2" type="revolute">
       <origin xyz="-0.0155 0.024 -0.0155" rpy="0 0 0"/>
       <parent link="${prefix}_stepper__2__1"/>
       <child link="${prefix}_5mm-ujoint-base__2__1"/>
       <axis xyz="0.0 1.0 0.0"/>
+      <limit upper="${2*PI}" lower="0" effort="100" velocity="100"/>
     </joint>
 
     <joint name="${prefix}_Revolute 37" type="continuous">
@@ -3002,12 +3005,13 @@
       <child link="${prefix}_leadscrew__5__1"/>
     </joint>
 
-    <joint name="${prefix}_Slider 40" type="prismatic">
+    <joint name="${prefix}_LeadScrew2" type="prismatic">
       <origin xyz="0.001673 -0.00719 0.003083" rpy="0 0 0"/>
       <parent link="${prefix}_leadscrew__5__1"/>
       <child link="${prefix}_screw-reciever__4__1"/>
       <axis xyz="0.209246 -0.89875 0.385311"/>
       <limit upper="0.0" lower="-0.075" effort="100" velocity="100"/>
+      <mimic joint="${prefix}_Platform_Base_Joint2" multiplier="${-3/(80 * PI)}"/>
     </joint>
 
     <joint name="${prefix}_Rigid 41" type="fixed">
@@ -3042,11 +3046,12 @@
       <axis xyz="1.0 -0.000581 -0.000388"/>
     </joint>
 
-    <joint name="${prefix}_Revolute 46" type="continuous">
+    <joint name="${prefix}_Platform_Base_Joint3" type="revolute">
       <origin xyz="-0.021174 0.024 -0.005674" rpy="0 0 0"/>
       <parent link="${prefix}_stepper_1"/>
       <child link="${prefix}_5mm-ujoint-base__1__1"/>
       <axis xyz="0.0 1.0 0.0"/>
+      <limit upper="${2*PI}" lower="0" effort="100" velocity="100"/>
     </joint>
 
     <joint name="${prefix}_Revolute 47" type="continuous">
@@ -3069,12 +3074,13 @@
       <child link="${prefix}_leadscrew__1__1"/>
     </joint>
 
-    <joint name="${prefix}_Slider 50" type="prismatic">
+    <joint name="${prefix}_LeadScrew3" type="prismatic">
       <origin xyz="0.001828 -0.007188 -0.002998" rpy="0 0 0"/>
       <parent link="${prefix}_leadscrew__1__1"/>
       <child link="${prefix}_screw-reciever__1__1"/>
       <axis xyz="0.228543 -0.898484 -0.374825"/>
       <limit upper="0.0" lower="-0.075" effort="100" velocity="100"/>
+      <mimic joint="${prefix}_Platform_Base_Joint3" multiplier="${-3/(80 * PI)}"/>
     </joint>
 
     <joint name="${prefix}_Rigid 51" type="fixed">
@@ -3109,11 +3115,12 @@
       <axis xyz="0.966493 -0.000738 0.256693"/>
     </joint>
 
-    <joint name="${prefix}_Revolute 56" type="continuous">
+    <joint name="${prefix}_Platform_Base_Joint4" type="revolute">
       <origin xyz="-0.005674 0.024 0.021173" rpy="0 0 0"/>
       <parent link="${prefix}_stepper__1__1"/>
       <child link="${prefix}_5mm-ujoint-base_1"/>
       <axis xyz="0.0 1.0 0.0"/>
+      <limit upper="${2*PI}" lower="0" effort="100" velocity="100"/>
     </joint>
 
     <joint name="${prefix}_Revolute 57" type="continuous">
@@ -3136,12 +3143,13 @@
       <child link="${prefix}_leadscrew_1"/>
     </joint>
 
-    <joint name="${prefix}_Slider 60" type="prismatic">
+    <joint name="${prefix}_LeadScrew4" type="prismatic">
       <origin xyz="0.003518 -0.007185 -9.1e-05" rpy="0 0 0"/>
       <parent link="${prefix}_leadscrew_1"/>
       <child link="${prefix}_screw-reciever__2__1"/>
       <axis xyz="0.439735 -0.898055 -0.011418"/>
       <limit upper="0.0" lower="-0.075" effort="100" velocity="100"/>
+      <mimic joint="${prefix}_Platform_Base_Joint4" multiplier="${-3/(80 * PI)}"/>
     </joint>
 
     <joint name="${prefix}_Rigid 61" type="fixed">
@@ -3176,11 +3184,12 @@
       <axis xyz="0.873803 0.000747 -0.486279"/>
     </joint>
 
-    <joint name="${prefix}_Revolute 66" type="continuous">
+    <joint name="${prefix}_Platform_Base_Joint5" type="revolute">
       <origin xyz="0.005673 0.024 0.021173" rpy="0 0 0"/>
       <parent link="${prefix}_stepper__4__1"/>
       <child link="${prefix}_5mm-ujoint-base__3__1"/>
       <axis xyz="0.0 1.0 0.0"/>
+      <limit upper="${2*PI}" lower="0" effort="100" velocity="100"/>
     </joint>
 
     <joint name="${prefix}_Revolute 67" type="continuous">
@@ -3203,12 +3212,13 @@
       <child link="${prefix}_leadscrew__3__1"/>
     </joint>
 
-    <joint name="${prefix}_Slider 70" type="prismatic">
+    <joint name="${prefix}_LeadScrew5" type="prismatic">
       <origin xyz="-0.003509 -0.007188 -9.6e-05" rpy="0 0 0"/>
       <parent link="${prefix}_leadscrew__3__1"/>
       <child link="${prefix}_screw-reciever__3__1"/>
       <axis xyz="-0.438578 -0.898614 -0.011916"/>
       <limit upper="0.0" lower="-0.075" effort="100" velocity="100"/>
+      <mimic joint="${prefix}_Platform_Base_Joint5" multiplier="${-3/(80 * PI)}"/>
     </joint>
 
     <joint name="${prefix}_Rigid 71" type="fixed">
@@ -3243,11 +3253,12 @@
       <axis xyz="-0.836433 0.000427 -0.548069"/>
     </joint>
 
-    <joint name="${prefix}_Revolute 76" type="continuous">
+    <joint name="${prefix}_Platform_Base_Joint6" type="revolute">
       <origin xyz="0.021173 0.024 -0.005674" rpy="0 0 0"/>
       <parent link="${prefix}_stepper__5__1"/>
       <child link="${prefix}_5mm-ujoint-base__4__1"/>
       <axis xyz="0.0 1.0 0.0"/>
+      <limit upper="${2*PI}" lower="0" effort="100" velocity="100"/>
     </joint>
 
     <joint name="${prefix}_Revolute 77" type="continuous">
@@ -3270,12 +3281,13 @@
       <child link="${prefix}_leadscrew__2__1"/>
     </joint>
 
-    <joint name="${prefix}_Slider 80" type="prismatic">
+    <joint name="${prefix}_LeadScrew6" type="prismatic">
       <origin xyz="-0.001833 -0.007188 -0.002995" rpy="0 0 0"/>
       <parent link="${prefix}_leadscrew__2__1"/>
       <child link="${prefix}_screw-reciever__5__1"/>
       <axis xyz="-0.229094 -0.898514 -0.374418"/>
       <limit upper="0.0" lower="-0.075" effort="100" velocity="100"/>
+      <mimic joint="${prefix}_Platform_Base_Joint6" multiplier="${-3/(80 * PI)}"/>
     </joint>
 
     <joint name="${prefix}_Rigid 81" type="fixed">
@@ -3611,35 +3623,35 @@
     </joint>
 
     <gazebo>
-        <joint name="${prefix}_platform_Rigid_1__146__gz" type="fixed">
-            <pose relative_to="${prefix}_new-neck_1">-0.01 0.005 0.009 0 0 0</pose>
-            <parent>${prefix}_10mm-ujoint-base__1__1</parent>
-            <child>${prefix}_new-neck_1</child>
-        </joint>
+      <joint name="${prefix}_platform_Rigid_1__146__gz" type="fixed">
+        <pose relative_to="${prefix}_new-neck_1">-0.01 0.005 0.009 0 0 0</pose>
+        <parent>${prefix}_10mm-ujoint-base__1__1</parent>
+        <child>${prefix}_new-neck_1</child>
+      </joint>
 
-        <joint name="${prefix}_platform_Rigig_2__148__gz" type="fixed">
-            <pose relative_to="${prefix}_new-neck_1">-0.06579 0.005034 -0.009 0 0 0</pose>
-            <parent>${prefix}_10mm-ujoint-base__2__1</parent>
-            <child>${prefix}_new-neck_1</child>
-        </joint>
+      <joint name="${prefix}_platform_Rigig_2__148__gz" type="fixed">
+        <pose relative_to="${prefix}_new-neck_1">-0.06579 0.005034 -0.009 0 0 0</pose>
+        <parent>${prefix}_10mm-ujoint-base__2__1</parent>
+        <child>${prefix}_new-neck_1</child>
+      </joint>
 
-        <joint name="${prefix}_platform_Rigid_3__147_gz" type="fixed">
-            <pose relative_to="${prefix}_new-neck_1">0.0555 0.005 -0.1048 0 0 0</pose>
-            <parent>${prefix}_10mm-ujoint-base__4__1</parent>
-            <child>${prefix}_new-neck_1</child>
-        </joint>
+      <joint name="${prefix}_platform_Rigid_3__147_gz" type="fixed">
+        <pose relative_to="${prefix}_new-neck_1">0.0555 0.005 -0.1048 0 0 0</pose>
+        <parent>${prefix}_10mm-ujoint-base__4__1</parent>
+        <child>${prefix}_new-neck_1</child>
+      </joint>
 
-        <joint name="${prefix}_platform_Rigid_4__149_gz" type="fixed">
-            <pose relative_to="${prefix}_new-neck_1">0.06561 0.005029 -0.009 0 0 0</pose>
-            <parent>${prefix}_10mm-ujoint-base__5__1</parent>
-            <child>${prefix}_new-neck_1</child>
-        </joint>
+      <joint name="${prefix}_platform_Rigid_4__149_gz" type="fixed">
+        <pose relative_to="${prefix}_new-neck_1">0.06561 0.005029 -0.009 0 0 0</pose>
+        <parent>${prefix}_10mm-ujoint-base__5__1</parent>
+        <child>${prefix}_new-neck_1</child>
+      </joint>
 
-        <joint name="${prefix}_platform_Rigid_5__150_gz" type="fixed">
-            <pose relative_to="${prefix}_new-neck_1">0.01 0.005 0.009 0 0 0</pose>
-            <parent>${prefix}_10mm-ujoint-base_1</parent>
-            <child>${prefix}_new-neck_1</child>
-        </joint>
+      <joint name="${prefix}_platform_Rigid_5__150_gz" type="fixed">
+        <pose relative_to="${prefix}_new-neck_1">0.01 0.005 0.009 0 0 0</pose>
+        <parent>${prefix}_10mm-ujoint-base_1</parent>
+        <child>${prefix}_new-neck_1</child>
+      </joint>
     </gazebo>
 
   </xacro:macro>
